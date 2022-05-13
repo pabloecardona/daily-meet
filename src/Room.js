@@ -119,7 +119,7 @@ if(room){
           }
           <button className='button disabled wide' onClick={handleLogout}><FontAwesomeIcon icon={faPhoneAlt} transform={{ rotate: 225 }}/></button>
         </div>
-        <img src={logo}></img>
+        <img src={logo} alt='daily meet logo'></img>
       </nav>
     </div>
   );
