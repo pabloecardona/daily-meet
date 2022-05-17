@@ -17,7 +17,7 @@ const VideoChat = () => {
 
   const handleSubmit = useCallback(async event => {
     event.preventDefault()
-    const data = await fetch('http://localhost:3001/get_token', {
+    const data = await fetch('./get_token', {
       method: 'POST',
       body: JSON.stringify({
         identity: username,

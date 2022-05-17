@@ -7,7 +7,6 @@ const Participant = ({ participant }) => {
   const [audioTracks, setAudioTracks] = useState([]);
   const [muted, setMuted] = useState(false)
 
-  console.log(audioTracks);
   const videoRef = useRef();
   const audioRef = useRef();
 
@@ -60,7 +59,6 @@ const Participant = ({ participant }) => {
 
   useEffect(() => {
     const audioTrack = audioTracks[0];
-    console.log(audioTrack);
     if (audioTrack) {
       audioTrack.attach(audioRef.current);
       audioTrack.isEnabled ? setMuted(false) : setMuted(true) ;
